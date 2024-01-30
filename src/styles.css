@@ -59,10 +59,6 @@ p, h1 {
 	color: crimson;
 }
 
-.app__status--connecting {
-	color: rgb(190, 175, 34);
-}
-
 .app__button {
 	padding: 0.6em 1.2em;
 	font-weight: 500;
@@ -103,8 +99,7 @@ outline: 4px auto -webkit-focus-ring-color;
 	box-shadow: 0 0 0 2px burlywood;
 }
 
-.live-table,
-.live-table__cell {
+.live-table {
 	border-collapse: collapse;
 }
 
