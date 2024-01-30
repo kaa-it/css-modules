@@ -1,4 +1,6 @@
 import { TLiveTable } from '../../types';
+import s from './live-table.module.scss';
+import clsx from 'clsx';
 
 type TLiveTableProps = {
 	table: TLiveTable;
@@ -7,23 +9,19 @@ type TLiveTableProps = {
 export const LiveTable = (props: TLiveTableProps) => {
 	const { table } = props;
 	return (
-		<table className='live-table'>
+		<table className={s.liveTable}>
 			<thead>
 				<tr>
-					<th className='live-table__cell live-table__cell--first-column'>
-						ID
-					</th>
-					<th className='live-table__cell'>Текст</th>
+					<th className={clsx(s.cell, s.cellFirstColumn)}>ID</th>
+					<th className={s.cell}>Текст</th>
 				</tr>
 			</thead>
 			<tbody>
 				{table.map((row) => {
 					return (
 						<tr key={row.id.toString()}>
-							<td className='live-table__cell live-table__cell--first-column'>
-								{row.id}
-							</td>
-							<td className='live-table__cell'>{row.text}</td>
+							<td className={clsx(s.cell, s.cellFirstColumn)}>{row.id}</td>
+							<td className={s.cell}>{row.text}</td>
 						</tr>
 					);
 				})}

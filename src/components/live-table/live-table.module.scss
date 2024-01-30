@@ -1,0 +1,31 @@
+.liveTable {
+	width: 400px;
+	table-layout: fixed;
+	border-radius: 10px;
+	border-style: hidden;
+	box-shadow: 0 0 0 2px burlywood;
+}
+
+.liveTable {
+	border-collapse: collapse;
+}
+
+.cell {
+	padding: 5px;
+	border: 2px solid burlywood;
+}
+
+.cellFirstColumn {
+	width: 10%;
+	text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+	.liveTable {
+		box-shadow: 0 0 0 2px #72a1be;
+	}
+
+	.cell {
+		border-color: #72a1be;
+	}
+}

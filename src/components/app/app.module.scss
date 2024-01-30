@@ -1,0 +1,78 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.header {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+.controls {
+	display: flex;
+	gap: 20px;
+}
+
+.statusLabel {
+	font-weight: 800;
+	font-size: 1em;
+}
+
+.status {
+	font-weight: bold;
+}
+
+.statusOnline {
+	color: forestgreen;
+}
+
+.statusOffline {
+	color: crimson;
+}
+
+.button {
+	padding: 0.6em 1.2em;
+	font-weight: 500;
+	font-size: 1em;
+	font-family: inherit;
+	border: 2px solid transparent;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+.button:hover {
+	border-color: #646cff;
+}
+
+.button:focus,
+.button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+.buttonConnect {
+	background-color: rgb(56, 114, 75);
+}
+
+.buttonDisconnect {
+	background-color: rgb(138, 72, 69);
+}
+
+.button:disabled {
+	background-color: #bbbaba;
+}
+
+@media (prefers-color-scheme: light) {
+	.buttonConnect {
+		background-color: rgb(171, 235, 193);
+	}
+
+	.buttonDisconnect {
+		background-color: rgb(232, 166, 163);
+	}
+
+	.button:disabled {
+		background-color: #bbbaba63;
+	}
+}
